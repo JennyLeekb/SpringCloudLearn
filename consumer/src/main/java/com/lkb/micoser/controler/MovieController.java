@@ -30,7 +30,7 @@ public class MovieController {
 	   * 查询microservice-provider-user服务的信息并返回
 	   * @return microservice-provider-user服务的信息
 	   */
-	  @GetMapping("/user-instance")
+	  @GetMapping("consumer/user")
 	  public List<ServiceInstance> showInfo() {
 	    return this.discoveryClient.getInstances("user");
 	  }
